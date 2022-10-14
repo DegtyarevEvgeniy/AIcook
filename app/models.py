@@ -1,13 +1,14 @@
+from statistics import mode
+from unittest.util import _MAX_LENGTH
 from django.db import models
 
 # Create your models here.
 
 class BaseProduct(models.Model):
-    type = models.CharField(max_length=100)
-    name = models.CharField(max_length=100)
-    basic_taste =  models.CharField(max_length=100)
-    fats = models.IntegerField()
-    carbohydrates = models.IntegerField()
-    protein = models.IntegerField()
-    glycemic_index = models.IntegerField()
-    calories = models.IntegerField()
+    number = models.IntegerField()
+    name = models.CharField(max_length=1000)
+    
+class Menu(models.Model):
+    number = models.IntegerField()
+    name = models.CharField(max_length=1000)
+    id_products = models.CharField(max_length=10000)
