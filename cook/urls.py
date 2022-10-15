@@ -21,5 +21,6 @@ from app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index_page),
+    path('main/', views.main_page)
     
 ]
