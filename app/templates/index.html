@@ -1,14 +1,190 @@
-<!doctype html>
-<html>
+<html lang="en">
+
+{% load static %}
 
 <head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<title>ESTAFETA</title>
-	<link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/css/uikit.min.css" />
-	<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/css/uikit.min.css" />
-	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/css/uikit.min.css" />
+    <script src="https://kit.fontawesome.com/24656403b4.js" crossorigin="anonymous"></script>
+
 </head>
-<a href="/main" class="uk-button uk-button-secondary uk-width-2-3 uk-margin-large-top uk-margin-large-left">Это переход на страницу обработки потому что в индексе надо чета делать Жене</a>
+
+<body>
+
+
+    <!-- section start -->
+    <div class="uk-section uk-text-center uk-margin">
+
+        <h1> AI cook</h1>
+
+        <p class="uk-text-meta">Платформа для поиска оптимального блюда</p>
+        <div class="uk-flex uk-flex-middle uk-flex-center uk-width-1-4" style="margin: 2% auto">
+            <a href="/main/" class="uk-button uk-button-primary uk-border-rounded uk-width-1-1 uk-margin-right">Подобрать блюдо</a>
+            <!-- <button class="uk-button uk-button-default uk-border-rounded uk-width-1-3 uk-margin-left">Узнать больше</button> -->
+        </div>
+        <img src="{% static "images/estafeta_index_1.jpg" %}">
+        </img>
+    </div>
+    <!-- section end -->
+
+    <!-- section start -->
+    <div class="uk-section uk-text-center uk-margin uk-width-4-5"
+        style="margin: 0 auto 2% auto; border-radius: 20px; background-color: #F7F7FB;">
+        <h1>Наши преимущества</h1>
+        <p class="uk-text-meta">Исключительно для тебя</p>
+
+        <!-- <p>{% static "images/estafeta_logo_Maths.jpg" %}</p> -->
+
+        <div class="uk-flex uk-flex-middle uk-flex-center uk-width-4-5" style="margin: 0 auto">
+            <!-- card start -->
+            <div class="uk-card uk-card-default uk-width-1-4" style="margin: 0 2%;border: 0px; border-radius: 20px;">
+                <div class="uk-card-header" style="border: none">
+                    <div class="uk-flex uk-flex-left uk-flex-middle " style="border: none">
+                        
+                        <div class="uk-width-auto">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Противопоказания</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body uk-text-left" style="border: none">
+                    <ul uk-nav>
+                        <li class="uk-active uk-flex uk-flex-middle"><i
+                                class="fa-regular fa-circle-check uk-margin-small-right" style="font-size: 20px;"></i>
+                            <p>Убираем продукты, которые могут Вам навредить</p>
+                        </li>
+                        <li class="uk-active uk-flex uk-flex-middle"><i
+                                class="fa-regular fa-circle-check uk-margin-small-right" style="font-size: 20px;"></i>
+                            <p>Есть выбор противопоказаний болезни</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="uk-card-footer" style="border: none">
+                    <a href="/main/" class="uk-button uk-button-primary uk-border-rounded ">Попробовать</a>
+                </div>
+            </div>
+            <!-- card end -->
+
+            <!-- card start -->
+            <div class="uk-card uk-card-primary uk-width-1-4" style="margin: 0 2%;border: 0px; border-radius: 20px;">
+                <div class="uk-card-header" style="border: none">
+                    <div class="uk-flex uk-flex-left uk-flex-middle " style="border: none">
+                        
+                        <div class="uk-width-auto">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">AI алгоритмы</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body uk-text-left" style="border: none">
+                    <ul uk-nav>
+                        <li class="uk-active uk-flex uk-flex-middle"><i
+                                class="fa-solid fa-circle-check uk-margin-small-right" style="font-size: 20px;"></i>
+                            <p>Блюдо подбирет не челоек, а нейронная сеть</p>
+                        </li>
+                        <li class="uk-active uk-flex uk-flex-middle"><i
+                                class="fa-solid fa-circle-check uk-margin-small-right" style="font-size: 20px;"></i>
+                            <p>Исключены ошибки</p>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <div class="uk-card-footer" style="border: none">
+                    <a href="/main/" class="uk-button uk-button-primary uk-border-rounded" style="color: blue">Попробовать</a>
+                </div>
+            </div>
+            <!-- card end -->
+
+            <!-- card start -->
+            <div class="uk-card uk-card-default uk-width-1-4" style="margin: 0 2%;border: 0px; border-radius: 20px;">
+                <div class="uk-card-header" style="border: none">
+                    <div class="uk-flex uk-flex-left uk-flex-middle " style="border: none">
+                        
+                        <div class="uk-width-auto">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Нелюбимые продукты</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body uk-text-left" style="border: none">
+                    <ul uk-nav>
+                        <li class="uk-active uk-flex uk-flex-middle"><i
+                                class="fa-regular fa-circle-check uk-margin-small-right" style="font-size: 20px;"></i>
+                            <p>Убираем продукты, которые Вам не нравятся</p>
+                        </li>
+                        <li class="uk-active uk-flex uk-flex-middle"><i
+                                class="fa-regular fa-circle-check uk-margin-small-right" style="font-size: 20px;"></i>
+                            <p>Делаем акцент на выбранные продукты при составлении блюд</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="uk-card-footer" style="border: none">
+                    <a href="/main/" class="uk-button uk-button-primary uk-border-rounded ">Попробовать</a>
+                </div>
+            </div>
+            <!-- card end -->
+        </div>
+    </div>
+    <!-- section end -->
+
+
+    <div class="uk-section uk-text-center uk-margin uk-width-4-5" style="margin: 0 auto">
+
+        <h1>AI cook в цифрах</h1>
+        <div class="uk-card uk-card-default uk-flex uk-flex-around uk-flex-middle uk-width-3-5"
+            style="border-radius: 20px; margin: 0 auto">
+            <div class="uk-flex-row">
+                <h1>8</h1>
+                <p>Countries</p>
+            </div>
+            <div class="uk-flex-row">
+                <h1>5</h1>
+                <p>Subjects</p>
+            </div>
+            <div class="uk-flex-row">
+                <h1>125</h1>
+                <p>Competitors</p>
+            </div>
+            <div class="uk-flex-row">
+                <h1>32</h1>
+                <p>Team members</p>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- section end -->
+
+
+
+    <div style="float: right; position: relative; right: 15%">
+        <img src="{% static "images/estafeta_index_7.jpg" %}" style="z-index: -1; height: 500px; width: 500px;"></img>
+    </div>
+    <!-- section start -->
+    <div class="section uk-width-1 uk-light" style="margin-top: 10%; background-color: blue;">
+        <div class="uk-card uk-width-4-5" style="z-index: 1; padding-top: 10%">
+            <div class="uk-flex uk-flex-center uk-flex-middle uk-width-auto" style="margin-bottom: 10%;">
+                <div>
+                    <h1 class="uk-margin-large-bottom uk-text-bold" style="color: white">Готовы начать?</h1>
+                    <a href="/main/" class="uk-button uk-button-primary"
+                        style="border-radius: 20px; padding: 1% 5%; color: blue">Попробовать</a>
+                </div>
+            </div>
+        </div>
+        <div class="uk-width-1 uk-flex uk-flex-around uk-flex-middle" style="background-color: blue">
+            <p style="color: white"> <img src="{% static "images/estafeta_logo.jpg" %}" class="uk-border-circle"
+                    style="border:1px solid white" width="40" height="40" alt=""> </p>
+            <p style="color: white">© 2022 Degtyarev Evgeniy, Inc. All Rights Reserved. </p>
+        </div>
+    </div>
+    <!-- section end -->
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/js/uikit-icons.min.js"></script>
+
+</html>
